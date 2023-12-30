@@ -12,7 +12,7 @@ import space.autistic.fishhead.WearablePufferfishItem;
 
 @Mixin(Items.class)
 public class FishheadMixin {
-    @ModifyArg(method = "<clinit>", remap = false, at = @At(value = "INVOKE", target = "register(Ljava/lang/String;Lnet/minecraft/item/Item;)Lnet/minecraft/item/Item;"), index = 1)
+    @ModifyArg(method = "<clinit>", at = @At(value = "INVOKE", target = "Lnet/minecraft/item/Items;register(Ljava/lang/String;Lnet/minecraft/item/Item;)Lnet/minecraft/item/Item;"), index = 1)
     private static Item fishhead_adjustPufferfish(String id, Item item) {
         if (id == "pufferfish") {
             return new WearablePufferfishItem(new Item.Settings().food(FoodComponents.PUFFERFISH));
