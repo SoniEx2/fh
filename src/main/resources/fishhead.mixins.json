@@ -1,0 +1,12 @@
+{
+	"required": true,
+	"package": "space.autistic.fishhead.mixinisbullshitcanyoujustfuckoffandstoptryingtostopusfromshootingourownfoot",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+		"FishheadMixin",
+                "FishheadSuppressRegistryErrorsMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
