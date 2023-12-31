@@ -8,6 +8,5 @@ public class FishheadModClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
-        ArmorRenderer.register(new FishheadArmorRenderer(), Items.PUFFERFISH);
     }
 }
