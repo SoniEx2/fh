@@ -17,10 +17,14 @@
 		"main": [
 		],
 		"client": [
-                    "space.autistic.fishhead.client.FishheadModClient"
+			"space.autistic.fishhead.client.FishheadModClient"
 		]
 	},
 	"mixins": [
+		{
+			"config": "fishhead.client.mixins.json",
+			"environment": "client"
+		},
 		"fishhead.mixins.json"
 	],
 	"depends": {

@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "space.autistic.fishhead.client.evenmoremixinshowmanydoyouthinkwecanhave",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+		"FishheadHeadFeatureRendererMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
